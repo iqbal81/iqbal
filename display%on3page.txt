@@ -1,0 +1,72 @@
+a2.html
+/* Question 2
+Create a form to accept student 
+
+Display the mark sheet for the student in the next form containing name,class,marks  of subject, total and percentage.*/
+
+<html>
+<body>
+<form action=a2.php method=GET>
+<h2>Student info input form</h2>
+<br>
+<h3>
+Name:<input type="text" name=sname><br><br>
+class:<input type="text" name=cid><br><br>
+Address:<textarea name=addr></textarea><br><br>
+<input type="submit" value="submit"><br><br>
+</form>
+</body>
+</html>
+
+a2.php
+<?php
+setcookie('name',$_GET['sname']);
+setcookie('class',$_GET['cid']);
+setcookie('address',$_GET['addr']);
+?>
+
+<html>
+<body>
+<form action="a2next.php" method="GET">
+<h2>MARKS ENTRY</h2>
+<br>
+<table>
+<tr><th>Physics:<th><input type="text" name="phy"><br></tr>
+<tr><th>biology:<th><input type="text" name="bio"><br></tr>
+<tr><th>chemistry:<th><input type="text" name="chm"><br></tr>
+<tr><th>maths:<th><input type="text" name="math"><br></tr>
+<tr><th>Marathi:<th><input type="text" name="mar"><br></tr>
+<tr><th>English:<th><input type="text" name="eng"><br></tr>
+</table>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
+
+a2next.php
+<?php
+$phy=$_GET["phy"];
+$bio=$_GET['bio'];
+$chm=$_GET['chm'];
+$math=$_GET['math'];
+$mar=$_GET['mar'];
+$eng=$_GET['eng'];
+$add=$phy+$bio+$chm+$math+$mar+$eng;
+$perc=$add/6;
+
+echo "<h2>Student Marksheet</h2>";
+echo "<br><h3>NAME:<i><font color=blue>".$_COOKIE["name"];
+echo "</font><br><h3>CLASS:<i><font color=blue>".$_COOKIE["class"];
+echo "</font><br><h3>Address:<i><font color=blue>".$_COOKIE["address"];
+echo "</font><br>";
+echo "<table border=1px<tr><th>Subject</th><th>Obtained marks</th><th>Maximum Marks</th></tr>
+<tr><td>Physics</td><td>$phy</td><td>100</td></tr>
+<tr><td>Biology</td><td>$bio</td><td>100</td></tr>
+<tr><td>Chemistry</td><td>$chm</td><td>100</td></tr>
+<tr><td>Maths</td><td>$math</td><td>100</td></tr>
+<tr><td>Marathi</td><td>$mar</td><td>100</td></tr>
+<tr><td>English</td><td>$eng</td><td>100</td></tr>
+<tr><td colspan=2>Total marks:$add</td><td>Percentage:perc%</td></tr></table>";
+?>
+
+
