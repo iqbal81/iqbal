@@ -1,4 +1,4 @@
-import java.awt.*;
+import java.awt.*;//run using appletviewer prog_name.java
 import java.awt.event.*;
 import javax.swing.*;
 import java.applet.*;
