@@ -1,0 +1,38 @@
+inheritance:uses of final keyword
+			uses of super keyword//to difference same variables,to access the methiods of paent class
+			inheritance systax//class child extends base
+			how to create and implement interface
+			types of inheritance
+			difference between abstract class and interface
+			what is method overriding//same name of the function in two different classes
+multithreading:two ways of creating thread class
+				what is multithreading//faster simultenus execution
+				why use synchonize keyword//to avoid any overriding of memeru space
+				use of notify() notifyAll()//wake up threads
+awt and swing:layouts//grid,card,box
+					syntax for basic components like labe,textfield,jpassword
+					MVC model and functionality
+					what is event handling any two types
+					//programs expected with listeners(mouse,action any)
+					write to demonstarte any components
+					list any two dialog boxes(JOPTIONPANE)//showmessege,showconfirmation
+applet:life cycle
+		programs
+		PARAM
+		limitation of applet
+		compalsary tags for applet//width,code,height
+collection:types of interfaces//list set queue map
+	iterators with example
+	short note on arraylist linkedlist with example
+	classes under map interface//hashmap linkedhashmap treemap
+	how to create hashmap//hashmap obj_name=new hashmap();
+	syntax for arrraylist linked list
+	constructer for hsahset,inumeration,vectors
+	use of itereator
+	write a prog to sort array list
+	prog to chek if some element exist in hashset
+	prog to demonstarte arrayitereator	
+		
+				
+				
+			
