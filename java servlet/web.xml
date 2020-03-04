@@ -1,0 +1,10 @@
+<web-app>
+    <servlet>
+        <servlet-name>asd</servlet-name>
+        <servlet-class>kunal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>asd</servlet-name>
+        <url-pattern>/result</url-pattern>
+    </servlet-mapping>
+</web-app>
