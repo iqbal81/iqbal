@@ -1,0 +1,63 @@
+
+import pandas as pd
+import numpy as np
+data = np.array(['a','b','c','d'])
+s = pd.Series(data)
+print(s)
+//output
+runfile('C:/Users/lacs.lab.MITWPU/.spyder-py3/untitled1.py', wdir='C:/Users/lacs.lab.MITWPU/.spyder-py3')
+0    a
+1    b
+2    c
+3    d
+dtype: object
+
+
+import pandas as pd
+import numpy as np
+
+df=pd.DataFrame(np.random.randn(5,3), index=['a','c','e','f','h'], columns=['one','two','three'])
+
+import numpy as np
+a = np.array([[1,2],[3,4]])
+print(a)
+[[1 2]
+ [3 4]]
+
+import numpy as np
+a = np.array([1,2,3,4,5],ndmin = 2)#minimum dimension
+print(a)
+[[1 2 3 4 5]]
+
+import pandas as pd
+import numpy as np
+df = pd.DataFrame(np.random.randn(5,3),index=['a','c','e','f','h'],columns=['one','two','three'])
+df = df.reindex(['a','b','c','d','e','f','g','h'])
+print(df)
+        one       two     three
+a -0.148754 -1.833023 -0.152331
+b       NaN       NaN       NaN
+c -0.188020 -0.852634  0.886889
+d       NaN       NaN       NaN
+e  0.813053  0.696054 -0.382187
+f  0.344706  0.085255  0.183372
+g       NaN       NaN       NaN
+h -1.821383 -1.169929 -1.513171
+
+import pandas as pd
+import numpy as np
+df = pd.DataFrame(np.random.randn(3,3),index=['a','c','e'],columns=['one','two','three'])
+df = df.reindex(['a','b','c'])
+print(df)
+print("NaN replaced with 0")
+print(df.fillna(0))
+        one       two     three
+a  1.441254  0.885765  1.228713
+b       NaN       NaN       NaN
+c -0.440300 -0.371833  1.621190
+NaN replaced with 0
+        one       two     three
+a  1.441254  0.885765  1.228713
+b  0.000000  0.000000  0.000000
+c -0.440300 -0.371833  1.621190
+
