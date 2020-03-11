@@ -1,0 +1,10 @@
+<web-app>
+<servlet>
+<servlet-name>reg</servlet-name>
+<servlet-class>fa</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>reg</servlet-name>
+<url-pattern>/fa</url-pattern>
+</servlet-mapping>
+</web-app>
